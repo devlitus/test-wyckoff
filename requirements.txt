@@ -1,0 +1,3 @@
+pandas>=2.0.0
+python-binance>=1.0.19
+mplfinance>=0.12.9b7

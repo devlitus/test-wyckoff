@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Gráfica BTCUSDT - TradingView{% endblock %}
+
+{% block content %}
+<h1 class="mb-4">Gráfica BTCUSDT (TradingView)</h1>
+
+<div class="mb-4">
+    <iframe src="https://s.tradingview.com/widgetembed/?frameElementId=tradingview_12345&symbol=BINANCE:BTCUSDT&interval=1D&hidesidetoolbar=1&symboledit=1&saveimage=1&toolbarbg=f1f3f6&studies=[]&theme=light&style=1&timezone=Etc/UTC&withdateranges=1&hideideas=1&studies_overrides={}" 
+            style="width:100%;height:600px;border:none;"></iframe>
+</div>
+
+<a href="{{ url_for('main.index') }}" class="btn btn-primary">Volver al inicio</a>
+{% endblock %}
